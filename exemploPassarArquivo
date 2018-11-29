@@ -1,0 +1,21 @@
+public  void passarArquivos( String ... paths ) { 
+
+        File arquivo ;
+
+        for (String caminho : paths) {
+
+            arquivo = new File( caminho );
+
+            System.out.println(" Nome :"+ arquivo.getName() );
+
+        }
+
+ }
+
+
+ public static void main(String[] args) {
+
+        SuaClass suaClass = new SuaClass();
+
+        suaClass.passarArquivo("C:\\arquivo1.txt" , "C:\\arquivo2.txt" );
+ }
